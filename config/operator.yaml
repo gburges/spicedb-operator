@@ -67,8 +67,8 @@ spec:
               cpu: "20m"
               memory: "32Mi"
           securityContext:
-            runAsUser: 65532
-            runAsGroup: 65532
+            runAsUser: 1001330000
+            runAsGroup: 1001330000
             runAsNonRoot: true
             readOnlyRootFilesystem: true
             seccompProfile:
@@ -79,8 +79,8 @@ spec:
                 - ALL
           terminationMessagePolicy: FallbackToLogsOnError
       securityContext:
-        runAsUser: 65532
-        runAsGroup: 65532
+        runAsUser: 1001330000
+        runAsGroup: 1001330000
         runAsNonRoot: true
         seccompProfile:
           type: RuntimeDefault
